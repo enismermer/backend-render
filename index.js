@@ -10,6 +10,10 @@ app.get("/api", (req, res) => {
   res.json({ message: "Hello depuis Express sur Render!" });
 });
 
+app.get("/tata", (req, res) => {
+  res.send("Hello tata!");
+})
+
 app.listen(PORT, () => {
   console.log(`Serveur démarré sur http://localhost:${PORT}`);
 });
